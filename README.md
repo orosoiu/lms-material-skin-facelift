@@ -8,11 +8,13 @@ Light facelift of Logitech Media Server's Material Skin to make it more palatabl
 - added some spacing on queue images to improve readability
 - custom color schemes
 
+The changes work best with the dark theme.
+
 # Installation
 
 Download the files in this repo and copy them to the *material-skin* subfolder in the LMS *prefs* folder as per https://github.com/CDrummond/lms-material/wiki/07-Customisation
 
-For example for MacOS you would copy the files to the *~/Library/Application Support/Squeezebox/material-skin* folder
+For example for MacOS you would copy the files to the *~/Library/Application Support/Squeezebox/material-skin* folder.
 
 
 # Before - after photos

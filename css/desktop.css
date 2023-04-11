@@ -81,6 +81,10 @@ body * {
 	filter: drop-shadow(3px 3px 5px var(--occam-shadow-color-medium));
 }
 
+#browse-list img.multi-disc {
+	z-index: 100;
+}
+
 img.np-image {
 	filter: drop-shadow(10px 10px 20px var(--occam-shadow-color-medium)) drop-shadow(6px 6px 6px var(--occam-shadow-color-light));
 	max-width: 90vw;

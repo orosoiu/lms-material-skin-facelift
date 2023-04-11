@@ -8,8 +8,10 @@ Light facelift of Logitech Media Server's Material Skin to make it more palatabl
 - added some spacing on queue images to improve readability
 - custom color schemes
 
-# Before-after photos
+# Installation
 
-## Desktop full HD portrait mode
-![desktop-full-hd-portrait-before](https://user-images.githubusercontent.com/3442410/231155512-c7ac700d-ea33-4a29-95f6-d7cc41268431.png)
-![desktop-full-hd-portrait-after](https://user-images.githubusercontent.com/3442410/231155526-666f880f-62bc-4ad0-9b0c-2e2eda1c9183.png)
+Download the files in this repo and copy them to the *material-skin* subfolder in the LMS *prefs* folder as per https://github.com/CDrummond/lms-material/wiki/07-Customisation
+
+For example for MacOS you would copy the files to the *~/Library/Application Support/Squeezebox/material-skin* folder
+
+

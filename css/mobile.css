@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css?family=Rubik');
+
+:root {
+	--occam-shadow-color-strong: rgba(0, 0, 0, 0.8);
+	--occam-shadow-color-medium: rgba(0, 0, 0, 0.6);
+	--occam-shadow-color-light: rgba(0, 0, 0, 0.3);
+	--occam-artist-border-radius: 50%;
+	--occam-cover-border-radius: 5%;
+	--occam-rating-star-size: 32px;
+}
+
+body * {
+	font-family: 'Rubik', sans-serif;
+}
+
+.np-title {
+	font-weight: bold;
+	text-shadow: 3px 3px 3px var(--occam-shadow-color-strong);
+	white-space: normal;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	display: -webkit-box;
+	-webkit-line-clamp: 2; /* number of lines to show */
+			line-clamp: 2; 
+	-webkit-box-orient: vertical;
+}
+
+.np-title-landscape {
+	text-shadow: 5px 5px 5px var(--occam-shadow-color-strong);
+}
+
+.np-text, .np-text-landscape {
+	text-shadow: 3px 3px 3px var(--occam-shadow-color-strong);
+}
+
+.np-text {
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+.np-title-landscape, .np-text-landscape {
+	white-space: normal;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	display: -webkit-box;
+	-webkit-line-clamp: 3; /* number of lines to show */
+			line-clamp: 3; 
+	-webkit-box-orient: vertical;
+}
+
+.np-tech {
+	color: #666;
+}
+
+.np-bar img {
+	filter: drop-shadow(2px 2px 5px var(--occam-shadow-color-medium));
+	padding: 3px 0 5px 0;
+}
+
+.v-list__tile__avatar {
+	align-items: center;
+}
+
+.lms-list .lms-avatar .v-avatar, .np-info-text-desktop .lms-list .lms-avatar .v-avatar {
+    width: calc(var(--list-elem-height) - 7px)!important;
+    height: calc(var(--list-elem-height) - 7px)!important;
+	margin: 0 !important;
+}
+
+.lms-list3 .lms-avatar .v-avatar {
+    width: calc(var(--list-elem-3line-height) - 9px)!important;
+    height: calc(var(--list-elem-3line-height) - 9px)!important;
+}
+
+#browse-list .lms-avatar .v-avatar img[src*="imageproxy"][src*="artist"][src*="image"] {
+	border-radius: var(--occam-artist-border-radius);
+	filter: drop-shadow(3px 3px 5px var(--occam-shadow-color-medium));
+}
+
+#browse-list .lms-avatar .v-avatar img[src*="music"][src*="cover"] {
+	border-radius: var(--occam-cover-border-radius);
+	filter: drop-shadow(3px 3px 5px var(--occam-shadow-color-medium));
+}
+
+#browse-list img.image-grid-item-img[src*="artist"] {
+	border-radius: var(--occam-artist-border-radius);
+	filter: drop-shadow(5px 5px 5px var(--occam-shadow-color-strong));
+}
+
+#browse-list img.image-grid-item-img[src*="cover"] {
+	border-radius: var(--occam-cover-border-radius);
+	filter: drop-shadow(5px 5px 5px var(--occam-shadow-color-strong));
+}
+
+#queue-list .lms-avatar .v-avatar img {
+	/*border-radius: var(--occam-cover-border-radius);*/
+	filter: drop-shadow(3px 3px 5px var(--occam-shadow-color-medium));
+}
+
+.lms-list-item .lms-avatar img, .np-info img {
+	border-radius: var(--occam-cover-border-radius);
+}
+
+img.np-image {
+	filter: drop-shadow(10px 10px 20px var(--occam-shadow-color-medium)) drop-shadow(6px 6px 6px var(--occam-shadow-color-light));
+	max-width: 90vw;
+}
+
+div:has(>img.np-image) {
+	text-align: center;
+}
+
+img.np-image-landscape {
+	filter: drop-shadow(10px 10px 20px var(--occam-shadow-color-medium)) drop-shadow(6px 6px 6px var(--occam-shadow-color-light));
+	padding: 1vw 1vw 0 3vw !important;
+}
+
+.np-portrait-rating {
+	top: calc(var(--np-portrait-image-size) - 5vh);
+}
+
+.v-rating i {
+	text-shadow: var(--occam-shadow-color-medium) 3px 3px 5px;
+}
+
+.np-portrait-rating .v-rating {
+	filter: drop-shadow(3px 3px 5px var(--occam-shadow-color-strong));
+}
+
+.np-portrait-rating .v-rating i {
+	text-shadow: var(--occam-shadow-color-strong) 3px 3px 5px;
+}
+
+.v-rating .v-icon:not(.image-grid-item-icon):not(.media-icon):not(.browse-progress):not(.player-status-icon) {
+	font-size: var(--occam-rating-star-size) !important;
+	width: var(--occam-rating-star-size) !important;
+	height: var(--occam-rating-star-size) !important;
+}
+
+/* for devices that do not support background blur (e.g. LG tv browser) set a very opaque background */
+.bgnd-cover {
+	box-shadow: inset 0 0 120vw 120vh rgba(32, 32, 32, 0.97) !important;
+}
+
+@supports (backdrop-filter: blur(5px)) {
+	.bgnd-cover {
+		box-shadow: inset 0 0 120vw 120vh var(--background-shadow-color) !important;
+	}
+}
+
+@supports (-webkit-backdrop-filter: none) {
+	.bgnd-cover {
+		box-shadow: inset 0 0 120vw 120vh var(--background-shadow-color) !important;
+	}
+  .bgnd-blur {
+    -webkit-backdrop-filter: blur(5px);
+  }
+}

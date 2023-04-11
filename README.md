@@ -15,3 +15,6 @@ Download the files in this repo and copy them to the *material-skin* subfolder i
 For example for MacOS you would copy the files to the *~/Library/Application Support/Squeezebox/material-skin* folder
 
 
+# Before - after photos
+
+You can find comparison photos on the [wiki page](https://github.com/orosoiu/lms-material-skin-facelift/wiki)

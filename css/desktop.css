@@ -56,27 +56,27 @@ body * {
     height: calc(var(--list-elem-3line-height) - 9px)!important;
 }
 
-#browse-list .lms-avatar .v-avatar img[src*="imageproxy"][src*="artist"][src*="image"] {
-	border-radius: var(--occam-artist-border-radius);
+#browse-list img[src*="imageproxy"][src*="artist"][src*="image"] {
+	border-radius: var(--occam-artist-border-radius) !important;
 	filter: drop-shadow(3px 3px 5px var(--occam-shadow-color-medium));
 }
 
-#browse-list .lms-avatar .v-avatar img[src*="music"][src*="cover"] {
-	border-radius: var(--occam-cover-border-radius);
+#browse-list img[src*="music"][src*="cover"] {
+	border-radius: var(--occam-cover-border-radius) !important;
 	filter: drop-shadow(3px 3px 5px var(--occam-shadow-color-medium));
 }
 
 #browse-list img.image-grid-item-img[src*="artist"] {
-	border-radius: var(--occam-artist-border-radius);
+	border-radius: var(--occam-artist-border-radius) !important;
 	filter: drop-shadow(5px 5px 5px var(--occam-shadow-color-strong));
 }
 
 #browse-list img.image-grid-item-img[src*="cover"] {
-	border-radius: var(--occam-cover-border-radius);
+	border-radius: var(--occam-cover-border-radius) !important;
 	filter: drop-shadow(5px 5px 5px var(--occam-shadow-color-strong));
 }
 
-#queue-list .lms-avatar .v-avatar img {
+#queue-view .lms-avatar .v-avatar img {
 	/*border-radius: var(--occam-cover-border-radius);*/
 	filter: drop-shadow(3px 3px 5px var(--occam-shadow-color-medium));
 }
